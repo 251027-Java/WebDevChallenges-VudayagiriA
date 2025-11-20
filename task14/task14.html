@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 14 - Add List Item</title>
+</head>
+<body>
+
+    <ul id="myList">
+        <!-- New items will appear here -->
+    </ul>
+
+    <button onclick="addItem()">Add New Item</button>
+
+    <script>
+        function addItem() {
+            let list = document.getElementById("myList");
+
+            // Create a new li element
+            let newItem = document.createElement("li");
+            newItem.textContent = "New Item";
+
+            // Add it to the list
+            list.appendChild(newItem);
+        }
+    </script>
+
+</body>
+</html>

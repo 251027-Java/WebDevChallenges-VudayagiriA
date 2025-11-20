@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 15 - Image Switcher</title>
+</head>
+<body>
+
+    <img id="myImage" src="cat.jpg" alt="A Cat" width="300">
+
+    <br><br>
+
+    <button id="switchBtn">Switch Image</button>
+
+    <script>
+        let isCat = true; // keeps track of which image is showing
+
+        document.getElementById("switchBtn").addEventListener("click", function() {
+            let img = document.getElementById("myImage");
+
+            if (isCat) {
+                img.src = "dog.jpg";
+                img.alt = " A Dog";
+            } else {
+                img.src = "cat.jpg";
+                img.alt = " A Cat";
+            }
+
+            isCat = !isCat; // flip the value (true ↔ false)
+        });
+    </script>
+
+</body>
+</html>
+

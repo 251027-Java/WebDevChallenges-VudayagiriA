@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 17 - Dark Mode</title>
+    <style>
+        /* Light mode (default) */
+        body {
+            background-color: white;
+            color: black;
+            transition: 0.3s;
+        }
+
+        /* Dark mode class */
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="toggleDark">Toggle Dark Mode</button>
+
+    <script>
+        let button = document.getElementById("toggleDark");
+
+        button.addEventListener("click", function() {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+
+</body>
+</html>
